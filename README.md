@@ -132,4 +132,4 @@ if __name__ == "__main__":
 ## <span id=dump_xkz> 许可证</span>
 MIT License
 
-Copyright (c) [2024] [YingLu]
+Copyright (c) 2024 YingLu
