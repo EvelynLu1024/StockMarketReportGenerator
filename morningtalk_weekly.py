@@ -101,7 +101,7 @@ class MorningTalkWeekly:
 
         # 添加标题
         title = doc.add_heading('', level=1)
-        run = title.add_run('泰康养老权益投资部晨会纪要')
+        run = title.add_run('__权益投资部晨会纪要')
         run.font.name = '楷体'
         run._element.rPr.rFonts.set(qn('w:eastAsia'), '楷体')
         run.font.size = Pt(14)
@@ -143,7 +143,7 @@ class MorningTalkWeekly:
             paragraph.paragraph_format.space_after = Pt(0)  # 设置段后间距
 
         # 保存文档
-        doc.save(os.path.join(self.output_dir, f'泰康养老权益投资部晨会纪要（{self.current_date_str}）.docx'))
+        doc.save(os.path.join(self.output_dir, f'某险资权益投资部晨会纪要（{self.current_date_str}）.docx'))
 
     def get_paragraphs(self):
         a_pct_chg = self.get_zdfweekly_w(','.join(list(self.yaml_data["a_index_codes"].values())))
@@ -264,13 +264,13 @@ class MorningTalkWeekly:
             "1、A股市场", morning_talk_weekly_a, morning_talk_weekly_aindus, morning_talk_weekly_wind_index,
             "2、港股市场", morning_talk_weekly_h, morning_talk_weekly_h_part2,
             "3、美股市场", morning_talk_weekly_usa, morning_talk_weekly_usa_part2,
-            "（汇报人：卢滢）"
+            "（汇报人：）"
         ]
 
 
 # if __name__ == "__main__":
 #     # 设置工作目录
-#     os.chdir("F:\\20231027_TaiKang\\20240611_Task28_morningtalk_weekly\\MTWeeklyCode")
+#     os.chdir("")
 #
 #     # 实例化MorningTalkWeekly类并生成报告
 #     morningtalk_weekly = MorningTalkWeekly(
